@@ -1,4 +1,4 @@
-module github.com/apache/rocketmq-clients/golang/v5
+module github.com/zhiyin2021/rocketmq-clients/golang/v5
 
 go 1.17
 

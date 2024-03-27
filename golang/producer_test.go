@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/rocketmq-clients/golang/v5/credentials"
-	v2 "github.com/apache/rocketmq-clients/golang/v5/protocol/v2"
 	gomock "github.com/golang/mock/gomock"
 	"github.com/prashantv/gostub"
+	"github.com/zhiyin2021/rocketmq-clients/golang/v5/credentials"
+	v2 "github.com/zhiyin2021/rocketmq-clients/golang/v5/protocol/v2"
 )
 
 func TestProducer(t *testing.T) {

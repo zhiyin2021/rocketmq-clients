@@ -22,9 +22,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/apache/rocketmq-clients/golang/v5/pkg/utils"
-	v2 "github.com/apache/rocketmq-clients/golang/v5/protocol/v2"
 	"github.com/dchest/siphash"
+	"github.com/zhiyin2021/rocketmq-clients/golang/v5/pkg/utils"
+	v2 "github.com/zhiyin2021/rocketmq-clients/golang/v5/protocol/v2"
 	// "github.com/dchest/siphash"
 )
 

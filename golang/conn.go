@@ -22,8 +22,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/apache/rocketmq-clients/golang/v5/pkg/grpc/middleware/zaplog"
 	validator "github.com/go-playground/validator/v10"
+	"github.com/zhiyin2021/rocketmq-clients/golang/v5/pkg/grpc/middleware/zaplog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )

@@ -29,10 +29,11 @@ import (
 
 	uberatomic "go.uber.org/atomic"
 
-	"github.com/apache/rocketmq-clients/golang/v5/pkg/utils"
+	"github.com/zhiyin2021/rocketmq-clients/golang/v5/pkg/utils"
 )
 
-/**
+/*
+*
 The codec for the message-id.
 
 Codec here provides the following two functions:
@@ -46,26 +47,26 @@ number. For V1, these two bytes are 0x0001.
 
 V1 message id example
 
-  ┌──┬────────────┬────┬────────┬────────┐
-  │01│56F7E71C361B│21BC│024CCDBE│00000000│
-  └──┴────────────┴────┴────────┴────────┘
-
+	┌──┬────────────┬────┬────────┬────────┐
+	│01│56F7E71C361B│21BC│024CCDBE│00000000│
+	└──┴────────────┴────┴────────┴────────┘
 
 V1 version message id generation rules
 
-                    process id(lower 2bytes)
-                            ▲
-mac address(lower 6bytes)   │   sequence number(big endian)
-                   ▲        │          ▲ (4bytes)
-                   │        │          │
-             ┌─────┴─────┐ ┌┴┐ ┌───┐ ┌─┴─┐
-      0x01+  │     6     │ │2│ │ 4 │ │ 4 │
-             └───────────┘ └─┘ └─┬─┘ └───┘
-                                 │
-                                 ▼
-          seconds since 2021-01-01 00:00:00(UTC+0)
-                        (lower 4bytes)
+	process id(lower 2bytes)
+	        ▲
 
+mac address(lower 6bytes)   │   sequence number(big endian)
+
+	             ▲        │          ▲ (4bytes)
+	             │        │          │
+	       ┌─────┴─────┐ ┌┴┐ ┌───┐ ┌─┴─┐
+	0x01+  │     6     │ │2│ │ 4 │ │ 4 │
+	       └───────────┘ └─┘ └─┬─┘ └───┘
+	                           │
+	                           ▼
+	    seconds since 2021-01-01 00:00:00(UTC+0)
+	                  (lower 4bytes)
 */
 type MessageIdCodec interface {
 	NextMessageId() MessageId

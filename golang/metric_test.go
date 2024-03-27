@@ -20,7 +20,7 @@ package golang
 import (
 	"testing"
 
-	v2 "github.com/apache/rocketmq-clients/golang/v5/protocol/v2"
+	v2 "github.com/zhiyin2021/rocketmq-clients/golang/v5/protocol/v2"
 )
 
 // This test is designed to verify there is no data race in dcmp.Reset

@@ -22,8 +22,8 @@ import (
 	reflect "reflect"
 	time "time"
 
-	v2 "github.com/apache/rocketmq-clients/golang/v5/protocol/v2"
 	gomock "github.com/golang/mock/gomock"
+	v2 "github.com/zhiyin2021/rocketmq-clients/golang/v5/protocol/v2"
 )
 
 // MockRpcClient is a mock of RpcClient interface.

@@ -33,9 +33,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/apache/rocketmq-clients/golang/v5/metadata"
-	v2 "github.com/apache/rocketmq-clients/golang/v5/protocol/v2"
 	"github.com/valyala/fastrand"
+	"github.com/zhiyin2021/rocketmq-clients/golang/v5/metadata"
+	v2 "github.com/zhiyin2021/rocketmq-clients/golang/v5/protocol/v2"
 	"go.opencensus.io/trace"
 	MD "google.golang.org/grpc/metadata"
 )
